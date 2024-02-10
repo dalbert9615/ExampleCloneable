@@ -1,4 +1,5 @@
 package model;
+/*Libreria para implementar la interfaz cloneable*/
 import java.lang.Cloneable;
 
 public class Student implements Cloneable{
@@ -34,6 +35,7 @@ public class Student implements Cloneable{
     public String toString() {
         return "Student [name=" + name + ", dni=" + dni + ", age=" + age + "]";
     }
+    /*Método heredado al implementar interfaz cloneable, importante "throws" para capturar excepciones */
     @Override
     public Object clone() throws CloneNotSupportedException{ 
         return super.clone(); 
